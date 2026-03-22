@@ -7,30 +7,49 @@ struct ContentView: View {
 
     var body: some View {
         NavigationStack {
-            VStack(spacing: 24) {
-                if !hub.isConfigured {
-                    Text("Configure hub in Settings to upload recordings.")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
+            ZStack {
+                Color.black
+                    .ignoresSafeArea()
+
+                VStack(spacing: 0) {
+                    if !hub.isConfigured {
+                        Text("Configure hub in Settings to upload recordings.")
+                            .font(.subheadline)
+                            .foregroundStyle(.white.opacity(0.45))
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 24)
+                            .padding(.top, 8)
+                    }
+
+                    Spacer(minLength: 0)
+
+                    AIVoiceInput()
+
+                    Spacer(minLength: 0)
+
+                    QueueStatusView()
+                        .padding(.horizontal, 16)
+                        .padding(.bottom, 24)
                 }
-                if recorder.isRecording {
-                    RecordingView()
-                } else {
-                    IdleView()
-                }
-                QueueStatusView()
             }
-            .padding()
             .navigationTitle("Meeting Notes")
+            #if os(iOS)
+            .navigationBarTitleDisplayMode(.inline)
+            #endif
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbarBackground(Color.black, for: .navigationBar)
+            .toolbarColorScheme(.dark, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     Button {
                         hub.showSettings = true
                     } label: {
                         Image(systemName: "gearshape")
+                            .foregroundStyle(.white.opacity(0.85))
                     }
                 }
             }
+            .preferredColorScheme(.dark)
             .sheet(isPresented: $hub.showSettings) {
                 SettingsView()
             }
@@ -39,51 +58,6 @@ struct ContentView: View {
                 queue.load()
             }
         }
-    }
-}
-
-struct RecordingView: View {
-    @EnvironmentObject var recorder: AudioRecorder
-    @EnvironmentObject var queue: UploadQueue
-
-    var body: some View {
-        VStack(spacing: 16) {
-            Image(systemName: "waveform.circle.fill")
-                .font(.system(size: 64))
-                .foregroundStyle(.red)
-            Text("Recording")
-                .font(.headline)
-            Text(recorder.formattedDuration)
-                .font(.title2.monospacedDigit())
-            Button("Stop", role: .destructive) {
-                recorder.stop { url in
-                    if let url {
-                        queue.enqueue(url)
-                    }
-                }
-            }
-            .buttonStyle(.borderedProminent)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-    }
-}
-
-struct IdleView: View {
-    @EnvironmentObject var recorder: AudioRecorder
-
-    var body: some View {
-        VStack(spacing: 16) {
-            Image(systemName: "mic.circle.fill")
-                .font(.system(size: 64))
-                .foregroundStyle(.secondary)
-            Text("Tap to record")
-                .font(.headline)
-            Button("Record") {
-                recorder.start()
-            }
-            .buttonStyle(.borderedProminent)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
@@ -97,22 +71,24 @@ struct QueueStatusView: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text("Queue")
                     .font(.subheadline.bold())
+                    .foregroundStyle(.white.opacity(0.9))
                 ForEach(queue.items) { item in
                     HStack {
                         Image(systemName: statusIcon(item.status))
                             .foregroundStyle(statusColor(item.status))
                         Text(item.fileName)
                             .lineLimit(1)
+                            .foregroundStyle(.white.opacity(0.85))
                         Spacer()
                         Text(item.statusLabel)
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(.white.opacity(0.5))
                     }
                     .padding(.vertical, 4)
                 }
             }
             .padding()
-            .background(.regularMaterial)
+            .background(Color.white.opacity(0.08))
             .clipShape(RoundedRectangle(cornerRadius: 12))
         }
     }
@@ -129,8 +105,8 @@ struct QueueStatusView: View {
 
     private func statusColor(_ status: UploadItem.Status) -> Color {
         switch status {
-        case .queued: .secondary
-        case .uploading: .blue
+        case .queued: .white.opacity(0.45)
+        case .uploading: .cyan
         case .processing: .orange
         case .done: .green
         case .failed: .red

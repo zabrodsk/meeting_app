@@ -47,6 +47,7 @@ struct SettingsView: View {
                     apiKey = cfg.apiKey
                 }
             }
+            .preferredColorScheme(.dark)
         }
     }
 }
