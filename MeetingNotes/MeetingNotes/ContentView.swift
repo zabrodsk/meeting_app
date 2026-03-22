@@ -4,18 +4,25 @@ struct ContentView: View {
     @EnvironmentObject var hub: HubClient
     @EnvironmentObject var recorder: AudioRecorder
     @EnvironmentObject var queue: UploadQueue
+    @Environment(\.colorScheme) private var colorScheme
+
+    private var screenBackground: Color {
+        colorScheme == .dark
+            ? Color(red: 0.04, green: 0.04, blue: 0.04)
+            : Color(red: 0.98, green: 0.98, blue: 0.99)
+    }
 
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.black
+                screenBackground
                     .ignoresSafeArea()
 
                 VStack(spacing: 0) {
                     if !hub.isConfigured {
                         Text("Configure hub in Settings to upload recordings.")
                             .font(.subheadline)
-                            .foregroundStyle(.white.opacity(0.45))
+                            .foregroundStyle(Color.primary.opacity(0.45))
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 24)
                             .padding(.top, 8)
@@ -36,12 +43,10 @@ struct ContentView: View {
             #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarBackground(Color.black, for: .navigationBar)
-            .toolbarColorScheme(.dark, for: .navigationBar)
+            .toolbarBackground(screenBackground, for: .navigationBar)
             #elseif os(macOS)
             .toolbarBackground(.visible, for: .windowToolbar)
-            .toolbarBackground(Color.black, for: .windowToolbar)
-            .toolbarColorScheme(.dark, for: .windowToolbar)
+            .toolbarBackground(screenBackground, for: .windowToolbar)
             #endif
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
@@ -49,11 +54,10 @@ struct ContentView: View {
                         hub.showSettings = true
                     } label: {
                         Image(systemName: "gearshape")
-                            .foregroundStyle(.white.opacity(0.85))
+                            .foregroundStyle(.primary)
                     }
                 }
             }
-            .preferredColorScheme(.dark)
             .sheet(isPresented: $hub.showSettings) {
                 SettingsView()
             }
@@ -67,6 +71,7 @@ struct ContentView: View {
 
 struct QueueStatusView: View {
     @EnvironmentObject var queue: UploadQueue
+    @Environment(\.colorScheme) private var colorScheme
 
     var body: some View {
         if queue.items.isEmpty {
@@ -75,24 +80,24 @@ struct QueueStatusView: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text("Queue")
                     .font(.subheadline.bold())
-                    .foregroundStyle(.white.opacity(0.9))
+                    .foregroundStyle(.primary)
                 ForEach(queue.items) { item in
                     HStack {
                         Image(systemName: statusIcon(item.status))
                             .foregroundStyle(statusColor(item.status))
                         Text(item.fileName)
                             .lineLimit(1)
-                            .foregroundStyle(.white.opacity(0.85))
+                            .foregroundStyle(.primary.opacity(0.9))
                         Spacer()
                         Text(item.statusLabel)
                             .font(.caption)
-                            .foregroundStyle(.white.opacity(0.5))
+                            .foregroundStyle(.secondary)
                     }
                     .padding(.vertical, 4)
                 }
             }
             .padding()
-            .background(Color.white.opacity(0.08))
+            .background(colorScheme == .dark ? Color.white.opacity(0.08) : Color.black.opacity(0.06))
             .clipShape(RoundedRectangle(cornerRadius: 12))
         }
     }
@@ -109,7 +114,7 @@ struct QueueStatusView: View {
 
     private func statusColor(_ status: UploadItem.Status) -> Color {
         switch status {
-        case .queued: .white.opacity(0.45)
+        case .queued: Color.primary.opacity(0.45)
         case .uploading: .cyan
         case .processing: .orange
         case .done: .green

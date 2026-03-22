@@ -27,7 +27,7 @@ struct AIVoiceInput: View {
                         } else {
                             Image(systemName: "mic")
                                 .font(.system(size: 26, weight: .regular))
-                                .foregroundStyle(Color.white.opacity(0.85))
+                                .foregroundStyle(Color.primary.opacity(0.85))
                                 .symbolRenderingMode(.monochrome)
                         }
                     }
@@ -39,7 +39,7 @@ struct AIVoiceInput: View {
 
                 Text(formatTime(elapsedSeconds))
                     .font(.system(size: 15, weight: .regular, design: .monospaced))
-                    .foregroundStyle(isRecording ? Color.white.opacity(0.85) : Color.white.opacity(0.35))
+                    .foregroundStyle(isRecording ? Color.primary.opacity(0.9) : Color.primary.opacity(0.35))
                     .padding(.top, 10)
                     .contentTransition(.numericText())
                     .animation(.easeInOut(duration: 0.2), value: elapsedSeconds)
@@ -50,7 +50,7 @@ struct AIVoiceInput: View {
 
                 Text(isRecording ? "Listening..." : promptText)
                     .font(.system(size: 12, weight: .regular))
-                    .foregroundStyle(Color.white.opacity(0.65))
+                    .foregroundStyle(Color.primary.opacity(0.65))
                     .padding(.top, 10)
                     .animation(.easeInOut(duration: 0.2), value: isRecording)
             }
@@ -77,7 +77,7 @@ struct AIVoiceInput: View {
         let seconds = date.timeIntervalSinceReferenceDate
         let degrees = (seconds.truncatingRemainder(dividingBy: 3.0)) / 3.0 * 360.0
         return RoundedRectangle(cornerRadius: 4, style: .continuous)
-            .fill(Color.white)
+            .fill(Color.primary)
             .frame(width: 22, height: 22)
             .rotationEffect(.degrees(degrees))
     }
@@ -110,7 +110,7 @@ struct AIVoiceInput: View {
 
         let barH = 26 * heightFraction
         return RoundedRectangle(cornerRadius: 2, style: .continuous)
-            .fill(Color.white.opacity(isRecording ? 0.55 : 0.12))
+            .fill(Color.primary.opacity(isRecording ? 0.55 : 0.12))
             .frame(width: 2, height: max(3, barH))
             .animation(.easeOut(duration: 0.12), value: heightFraction)
     }

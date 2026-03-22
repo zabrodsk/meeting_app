@@ -11,6 +11,7 @@
 		06093AE259A8567612BA3376 /* AIVoiceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272A63CBE821E68D0B587F5B /* AIVoiceInput.swift */; };
 		3FAF8BF859A50E4705D11232 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82045DB416F35D59571878E1 /* ContentView.swift */; };
 		A5C6E1CAEB825BA8AB06882E /* UploadQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC87C2B7EEAE3450B1FB9C5 /* UploadQueue.swift */; };
+		AA98E5D870924475CC6E605B /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160C8E2AA11E990936E95349 /* AppAppearance.swift */; };
 		B45C2AFE49686E5FEAED4C30 /* UploadItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566A60AE41D7ADF121D013C9 /* UploadItem.swift */; };
 		BF679DA8B389C71C2A36F952 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F283328A6CD8F205076344 /* AudioRecorder.swift */; };
 		C1CF4F9B0197642A1CDD2218 /* MeetingNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746CB170C91245362E136D8 /* MeetingNotesApp.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0C34D6C411512F21D1D30A27 /* HubConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubConfig.swift; sourceTree = "<group>"; };
+		160C8E2AA11E990936E95349 /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
 		272A63CBE821E68D0B587F5B /* AIVoiceInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIVoiceInput.swift; sourceTree = "<group>"; };
 		2A6E6175E97A0DAB771665FF /* HubClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubClient.swift; sourceTree = "<group>"; };
 		566A60AE41D7ADF121D013C9 /* UploadItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadItem.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		699D7E6927850598C5ED86CB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				160C8E2AA11E990936E95349 /* AppAppearance.swift */,
 				0C34D6C411512F21D1D30A27 /* HubConfig.swift */,
 				566A60AE41D7ADF121D013C9 /* UploadItem.swift */,
 			);
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06093AE259A8567612BA3376 /* AIVoiceInput.swift in Sources */,
+				AA98E5D870924475CC6E605B /* AppAppearance.swift in Sources */,
 				BF679DA8B389C71C2A36F952 /* AudioRecorder.swift in Sources */,
 				3FAF8BF859A50E4705D11232 /* ContentView.swift in Sources */,
 				E27429AFE8248C59BA60D217 /* HubClient.swift in Sources */,
