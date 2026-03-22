@@ -13,8 +13,10 @@ struct SettingsView: View {
                 Section {
                     TextField("Hub URL", text: $baseURL, prompt: Text("https://mini.your-tailnet.ts.net:8000"))
                         .textContentType(.URL)
-                        .autocapitalization(.none)
+                        #if os(iOS)
+                        .textInputAutocapitalization(.never)
                         .autocorrectionDisabled()
+                        #endif
                     SecureField("API Key", text: $apiKey)
                         .textContentType(.password)
                 } header: {
@@ -31,7 +33,9 @@ struct SettingsView: View {
                 }
             }
             .navigationTitle("Settings")
+            #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
+            #endif
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") { dismiss() }

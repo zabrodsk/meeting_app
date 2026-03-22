@@ -17,6 +17,7 @@ final class AudioRecorder: NSObject, ObservableObject {
     }
 
     func start() {
+        #if os(iOS)
         let session = AVAudioSession.sharedInstance()
         do {
             try session.setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker, .allowBluetoothA2DP])
@@ -24,6 +25,7 @@ final class AudioRecorder: NSObject, ObservableObject {
         } catch {
             return
         }
+        #endif
 
         let dir = FileManager.default.temporaryDirectory
         let name = "meeting_\(Date().timeIntervalSince1970).m4a"
