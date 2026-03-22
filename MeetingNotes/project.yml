@@ -9,7 +9,8 @@ options:
 targets:
   MeetingNotes:
     type: application
-    platform: [iOS, macOS]
+    # Single multiplatform target (iPhone, iPad, Mac) — not separate _iOS / _macOS targets
+    supportedDestinations: [iOS, macOS]
     deploymentTarget:
       iOS: "17.0"
       macOS: "14.0"

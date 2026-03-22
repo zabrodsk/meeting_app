@@ -7,22 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09159B18D0D480A9949C8BB1 /* HubConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34D6C411512F21D1D30A27 /* HubConfig.swift */; };
-		19C54C365CBB5EA6642D1F13 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F283328A6CD8F205076344 /* AudioRecorder.swift */; };
-		23066D0BE4DF7FAB378FFFBD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D68238B4558FD2E24BA5A9 /* SettingsView.swift */; };
-		3BD8BCF63A72FCAE4E358412 /* UploadItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566A60AE41D7ADF121D013C9 /* UploadItem.swift */; };
-		766020E2405EC0E6F6E408AC /* MeetingNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746CB170C91245362E136D8 /* MeetingNotesApp.swift */; };
-		788FC5CB1F0500708B339CA0 /* HubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E6175E97A0DAB771665FF /* HubClient.swift */; };
-		78B67708BCC3B2C136F9CAEA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D68238B4558FD2E24BA5A9 /* SettingsView.swift */; };
-		9ABE4EA347AD78D1E5C567FE /* UploadQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC87C2B7EEAE3450B1FB9C5 /* UploadQueue.swift */; };
-		A124F4B87C4C929EA4D4348D /* HubConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34D6C411512F21D1D30A27 /* HubConfig.swift */; };
-		AB84B27F72A69B20A65B6E30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82045DB416F35D59571878E1 /* ContentView.swift */; };
-		B607085C89481F3A536F3F0B /* UploadQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC87C2B7EEAE3450B1FB9C5 /* UploadQueue.swift */; };
-		B73A0E00B44586C0B2AB0FFF /* MeetingNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746CB170C91245362E136D8 /* MeetingNotesApp.swift */; };
-		C6F3CA1FE27F35AC9B391CCA /* UploadItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566A60AE41D7ADF121D013C9 /* UploadItem.swift */; };
-		CEC4233ACF1971D4759BC97B /* HubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E6175E97A0DAB771665FF /* HubClient.swift */; };
-		D77B5E31E15FDA7DD012EE97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82045DB416F35D59571878E1 /* ContentView.swift */; };
-		F6AFB252ADB5509DC9676DEE /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F283328A6CD8F205076344 /* AudioRecorder.swift */; };
+		01CF1C0F3A1E793328A27BDE /* HubConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34D6C411512F21D1D30A27 /* HubConfig.swift */; };
+		3FAF8BF859A50E4705D11232 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82045DB416F35D59571878E1 /* ContentView.swift */; };
+		A5C6E1CAEB825BA8AB06882E /* UploadQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC87C2B7EEAE3450B1FB9C5 /* UploadQueue.swift */; };
+		B45C2AFE49686E5FEAED4C30 /* UploadItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566A60AE41D7ADF121D013C9 /* UploadItem.swift */; };
+		BF679DA8B389C71C2A36F952 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F283328A6CD8F205076344 /* AudioRecorder.swift */; };
+		C1CF4F9B0197642A1CDD2218 /* MeetingNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746CB170C91245362E136D8 /* MeetingNotesApp.swift */; };
+		E27429AFE8248C59BA60D217 /* HubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E6175E97A0DAB771665FF /* HubClient.swift */; };
+		F746EF87F4212978A06BA133 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D68238B4558FD2E24BA5A9 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +24,9 @@
 		6EE939D758F4E92D7F2AD16F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		82045DB416F35D59571878E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8746CB170C91245362E136D8 /* MeetingNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingNotesApp.swift; sourceTree = "<group>"; };
+		9B8A6BBD022A072C98F8CF21 /* MeetingNotes.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MeetingNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC87C2B7EEAE3450B1FB9C5 /* UploadQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadQueue.swift; sourceTree = "<group>"; };
-		A52A79639CAA16E601D0F007 /* MeetingNotes.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MeetingNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D68238B4558FD2E24BA5A9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		D631FED6041FED9853983A38 /* MeetingNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetingNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3F283328A6CD8F205076344 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,8 +74,7 @@
 		8975A53AAC5920ADB33D3178 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A52A79639CAA16E601D0F007 /* MeetingNotes.app */,
-				D631FED6041FED9853983A38 /* MeetingNotes.app */,
+				9B8A6BBD022A072C98F8CF21 /* MeetingNotes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,38 +90,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00FEE2B2487972EBA8806363 /* MeetingNotes_iOS */ = {
+		027616721B6070705A150A9E /* MeetingNotes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 55D6B3E022C6C2C360FD6E9D /* Build configuration list for PBXNativeTarget "MeetingNotes_iOS" */;
+			buildConfigurationList = E7AE0062FDC8590DE5883F0F /* Build configuration list for PBXNativeTarget "MeetingNotes" */;
 			buildPhases = (
-				1F7D37595011325AD16958D6 /* Sources */,
+				50A41AED7D25DDF6A3EC3BCA /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MeetingNotes_iOS;
+			name = MeetingNotes;
 			packageProductDependencies = (
 			);
-			productName = MeetingNotes_iOS;
-			productReference = A52A79639CAA16E601D0F007 /* MeetingNotes.app */;
-			productType = "com.apple.product-type.application";
-		};
-		D057872E966128F7F05AEFD4 /* MeetingNotes_macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3087D6BBA59F528480CF2439 /* Build configuration list for PBXNativeTarget "MeetingNotes_macOS" */;
-			buildPhases = (
-				EE885AFF95C13DBBA54DC119 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MeetingNotes_macOS;
-			packageProductDependencies = (
-			);
-			productName = MeetingNotes_macOS;
-			productReference = D631FED6041FED9853983A38 /* MeetingNotes.app */;
+			productName = MeetingNotes;
+			productReference = 9B8A6BBD022A072C98F8CF21 /* MeetingNotes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -157,83 +130,50 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				00FEE2B2487972EBA8806363 /* MeetingNotes_iOS */,
-				D057872E966128F7F05AEFD4 /* MeetingNotes_macOS */,
+				027616721B6070705A150A9E /* MeetingNotes */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1F7D37595011325AD16958D6 /* Sources */ = {
+		50A41AED7D25DDF6A3EC3BCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19C54C365CBB5EA6642D1F13 /* AudioRecorder.swift in Sources */,
-				D77B5E31E15FDA7DD012EE97 /* ContentView.swift in Sources */,
-				788FC5CB1F0500708B339CA0 /* HubClient.swift in Sources */,
-				A124F4B87C4C929EA4D4348D /* HubConfig.swift in Sources */,
-				B73A0E00B44586C0B2AB0FFF /* MeetingNotesApp.swift in Sources */,
-				23066D0BE4DF7FAB378FFFBD /* SettingsView.swift in Sources */,
-				C6F3CA1FE27F35AC9B391CCA /* UploadItem.swift in Sources */,
-				9ABE4EA347AD78D1E5C567FE /* UploadQueue.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE885AFF95C13DBBA54DC119 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F6AFB252ADB5509DC9676DEE /* AudioRecorder.swift in Sources */,
-				AB84B27F72A69B20A65B6E30 /* ContentView.swift in Sources */,
-				CEC4233ACF1971D4759BC97B /* HubClient.swift in Sources */,
-				09159B18D0D480A9949C8BB1 /* HubConfig.swift in Sources */,
-				766020E2405EC0E6F6E408AC /* MeetingNotesApp.swift in Sources */,
-				78B67708BCC3B2C136F9CAEA /* SettingsView.swift in Sources */,
-				3BD8BCF63A72FCAE4E358412 /* UploadItem.swift in Sources */,
-				B607085C89481F3A536F3F0B /* UploadQueue.swift in Sources */,
+				BF679DA8B389C71C2A36F952 /* AudioRecorder.swift in Sources */,
+				3FAF8BF859A50E4705D11232 /* ContentView.swift in Sources */,
+				E27429AFE8248C59BA60D217 /* HubClient.swift in Sources */,
+				01CF1C0F3A1E793328A27BDE /* HubConfig.swift in Sources */,
+				C1CF4F9B0197642A1CDD2218 /* MeetingNotesApp.swift in Sources */,
+				F746EF87F4212978A06BA133 /* SettingsView.swift in Sources */,
+				B45C2AFE49686E5FEAED4C30 /* UploadItem.swift in Sources */,
+				A5C6E1CAEB825BA8AB06882E /* UploadQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		01DCEC876348EB57B75EBEDC /* Debug */ = {
+		24FC2F039E3F592F25D7CCD1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = MeetingNotes/Info.plist;
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Meeting Notes sends recordings to your Mac mini for transcription.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Meeting Notes needs microphone access to record meetings.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.meetingnotes.app;
-				PRODUCT_NAME = MeetingNotes;
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		1289CF61B1663589DFD3B7C8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = MeetingNotes/Info.plist;
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Meeting Notes sends recordings to your Mac mini for transcription.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Meeting Notes needs microphone access to record meetings.";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.meetingnotes.app;
-				PRODUCT_NAME = MeetingNotes;
-				SDKROOT = macosx;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -294,6 +234,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -350,13 +291,14 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		A89192EB5E6EB35EDD6DBF3D /* Release */ = {
+		4CC32148B0F748E198295C4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -365,35 +307,16 @@
 				INFOPLIST_FILE = MeetingNotes/Info.plist;
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Meeting Notes sends recordings to your Mac mini for transcription.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Meeting Notes needs microphone access to record meetings.";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.meetingnotes.app;
-				PRODUCT_NAME = MeetingNotes;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		AB5DB3F583C8258AB0A3AF37 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = MeetingNotes/Info.plist;
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Meeting Notes sends recordings to your Mac mini for transcription.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Meeting Notes needs microphone access to record meetings.";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.meetingnotes.app;
-				PRODUCT_NAME = MeetingNotes;
-				SDKROOT = iphoneos;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -401,29 +324,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3087D6BBA59F528480CF2439 /* Build configuration list for PBXNativeTarget "MeetingNotes_macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				01DCEC876348EB57B75EBEDC /* Debug */,
-				1289CF61B1663589DFD3B7C8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		55D6B3E022C6C2C360FD6E9D /* Build configuration list for PBXNativeTarget "MeetingNotes_iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB5DB3F583C8258AB0A3AF37 /* Debug */,
-				A89192EB5E6EB35EDD6DBF3D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		864E443AB23A46CB80A1D421 /* Build configuration list for PBXProject "MeetingNotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40BBE3A2426EAC1417A04DDA /* Debug */,
 				49BB167524707BDCE9BFBEE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E7AE0062FDC8590DE5883F0F /* Build configuration list for PBXNativeTarget "MeetingNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC32148B0F748E198295C4F /* Debug */,
+				24FC2F039E3F592F25D7CCD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
