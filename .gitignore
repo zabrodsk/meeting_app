@@ -1,0 +1,30 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.Python
+*.egg-info/
+.eggs/
+.env
+
+# Xcode / Swift
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.hmap
+*.ipa
+*.dSYM
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Audio / test artifacts
+*.aiff
+*.wav
+meeting-hub/test_audio.*
+
+# Cursor / IDE
+.cursor/

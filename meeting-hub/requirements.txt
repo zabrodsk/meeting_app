@@ -1,0 +1,11 @@
+# Meeting Hub — Mac mini inference service
+# ASR
+faster-whisper>=1.0.0
+# HTTP API
+uvicorn[standard]>=0.24.0
+fastapi>=0.104.0
+python-multipart>=0.0.6
+# Notion API
+httpx>=0.25.0
+# Local LLM (Ollama)
+httpx
