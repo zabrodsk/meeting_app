@@ -35,10 +35,14 @@ struct ContentView: View {
             .navigationTitle("Meeting Notes")
             #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
-            #endif
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbarBackground(Color.black, for: .navigationBar)
             .toolbarColorScheme(.dark, for: .navigationBar)
+            #elseif os(macOS)
+            .toolbarBackground(.visible, for: .windowToolbar)
+            .toolbarBackground(Color.black, for: .windowToolbar)
+            .toolbarColorScheme(.dark, for: .windowToolbar)
+            #endif
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     Button {
